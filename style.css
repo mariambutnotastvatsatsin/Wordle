@@ -1,5 +1,7 @@
 #header{
+    text-align: center; 
     border: 1px solid black;
-    width: 100px;
-    height: 100px;
+    width:400px; 
+    height:570px; 
+    margin:0 auto; 
 }
