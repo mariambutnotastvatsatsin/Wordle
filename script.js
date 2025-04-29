@@ -1,6 +1,7 @@
 // document.addEventListener("DOMContentLoaded", function () {
     
 // });
+import data from './data.js';
 
 let header = document.getElementById("header");
 let Words = ["touch", "smash", "clock", "close"]
@@ -61,10 +62,9 @@ if (cnt === 5) {
 document.addEventListener("keypress", function (event) {
 
     if (event.key === "Enter") {
-            
-        let h3s = document.querySelectorAll("#header h1");
-        
-        for (let i = 0; i < 5; i++) {
+         let h3s = document.querySelectorAll("#header h1");
+            if(data.includes(arr.join(''))){
+                for (let i = 0; i < 5; i++) {
             h3s[i].style.color = "grey";
             if (arr[i] === arrWord[i]) {
                 h3s[i].style.color = "green";  
@@ -72,6 +72,9 @@ document.addEventListener("keypress", function (event) {
                 h3s[i].style.color = "yellow";  
             }
         }
+    }else{
+                alert("chka tenc bar")
+            }      
     }
 });
 
